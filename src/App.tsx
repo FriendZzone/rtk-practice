@@ -1,21 +1,11 @@
-import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
-import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
-import AppRoutes from 'routes';
-import './App.css';
-import themeConfig from 'theme';
-import getLPTheme from 'getLPTheme';
-
 function App() {
-  const LPtheme = createTheme(getLPTheme());
-
   return (
-    <EmotionThemeProvider theme={themeConfig}>
-      <ThemeProvider theme={LPtheme}>
-        <CssBaseline />
-        <AppRoutes />
-      </ThemeProvider>
-    </EmotionThemeProvider>
-  );
+    <div className='App'>
+      <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
+        Learn React
+      </a>
+    </div>
+  )
 }
 
-export default App;
+export default App

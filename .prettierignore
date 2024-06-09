@@ -1,8 +1,0 @@
-build
-coverage
-dist
-.husky
-commitlint.config.cjs
-node_modules
-package-lock.json
-.gitlab-ci.yml

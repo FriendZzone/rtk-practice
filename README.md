@@ -1,106 +1,46 @@
-# React + TypeScript + Vite
+# Getting Started with Create React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Currently, two official plugins are available:
+## Available Scripts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In the project directory, you can run:
 
-## Expanding the ESLint configuration
+### `yarn start`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Configure the top-level `parserOptions` property like this:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+### `yarn test`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Configuration
+### `yarn build`
 
-Create a `.env` file
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Rename the [.env.sample](.env.sample) file to `.env` to fix it.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Installation
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```sh
-# 1. download all libraries
-yarn
-# 2. Run project in localhost
-yarn dev
-```
+### `yarn eject`
 
-## Features
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-We create this boilerplate using TypeScript + Vite default boilerplate with the following add-on features:
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- **_Redux toolkit - React-persist_** :State management
-- **_Shopify/Polaris - Shopify/Polaris-Icon_** :UI library
-- **_@shopify/polaris-viz_** :Chart
-- **_@shopify/react-form_** :Validate form
-- **_Axios_** :Call API
-- **_dotenv_** :Read data from file .env
-- **_react-error-boundary_** :Catch error from project
-- **_react-router-dom_** :Routes
-- **_styled-components_** :Css
-- **_prettier_** :Format code
-- **_eslint_** :Clean code
-  ...
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Please check the `package.json` for more details.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-```js
-src/ // the source code of the application
-│  ├─ apis/
-│  ├─ assets/
-│  ├─ components/
-│  ├─ constants/
-│  ├─ helpers/
-│  ├─ hooks/
-│  ├─ icons/
-│  ├─ interfaces/
-│  ├─ layout/
-│  │  ├─ Sidebar/
-│  │  │  ├─ index.tsx/
-│  │  │  ├─ styled.ts/
-│  │  ├─ Navbar/
-│  │  │  ├─ index.tsx/
-│  │  │  ├─ styled.ts/
-│  │  ├─ Footer/
-│  │  │  ├─ index.tsx/
-│  │  │  ├─ styled.ts/
-│  │  ├─ index.tsx/
-│  │  ├─ styled.ts/
-│  ├─ pages/
-│  │  ├─ Example/
-│  │  │  ├─ components/
-│  │  │  │  ├─ components/
-│  │  │  │  │  ├─ ChildExample/
-│  │  │  │  │  │  ├─ index.tsx/
-│  │  │  │  │  │  ├─ styled.ts/
-│  │  │  │  │  │  ├─ config.ts/
-│  │  │  ├─ index.tsx/
-│  │  │  ├─ styled.ts/
-│  │  │  ├─ config.ts/
-│  ├─ redux/
-│  │  ├─ api/
-│  │  │  ├─ api.caller.ts/
-│  │  │  ├─ fetchBase.ts/
-│  │  ├─ feature/
-│  │  │  ├─ auth.slice.ts/
-│  │  │  ├─ example.slice.ts/
-│  │  ├─ persist.config.ts/
-│  │  ├─ store/
-│  ├─ routes/
-```
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
